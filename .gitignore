@@ -1,2 +1,3 @@
 *.acorn
 img/BiMo_logo.acorn
+.DS_Store
