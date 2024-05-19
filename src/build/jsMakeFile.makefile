@@ -11,12 +11,25 @@ build_bimo_starter{
 }
 
 build_bimo_server{
+
+	server.push{
+		cd "./server"
+		node-build --JS-to-C --filelist='./build/server/push.txt' --outdir='./build/artefact/server/push'
+	}
+
 	server.auth{
 		cd "./server/auth"
-		node-build --JS-to-C --filelist='./build/server/auth.txt' --outfile'./build/artefact/server/auth/*.elf'
+		node-build --JS-to-C --filelist='./build/server/auth.txt' --outdir='./build/artefact/server/auth'
 	}
+
 	server.database{
 		cd "./server/database"
-		node-build --JS-to-C --filelist='./build/server/database.txt' --outfile'./build/artefact/server/database/*.elf'
+		node-build --JS-to-C --filelist='./build/server/database.txt' --outdir='./build/artefact/server/database'
+	}
+}
+
+build_bimo_client{
+	client.ui{
+		cd "./client/ui"
 	}
 }
