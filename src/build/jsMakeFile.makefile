@@ -29,7 +29,7 @@ build_bimo_server{
 }
 
 build_bimo_client{
-	client.ui{
-		cd "./client/ui"
+	client.frontend{
+		cd "./client/frontend"
 	}
 }
