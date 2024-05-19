@@ -8,3 +8,6 @@ img/BiMo_logo.acorn
 #IDE
 .vscode
 .vscode/
+
+#oops i forgot node_modules
+node_modules/
