@@ -1,6 +1,6 @@
 arguments(
   - BuildManifestFormant : BM1.0
   - BuildIntegrationSystem : node-build --action-pipeline
-  - PipelinceManagement : node-oversee --action build='JS-to-C'
+  - PipelineManagement : node-oversee --action build='JS-to-C'
 
 )
