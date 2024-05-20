@@ -10,7 +10,8 @@ buildutils_configure{
 
 #Distribution directory
 	export $FA_LOCATION = "./dist"
-}
+
+
 
 build_bimo_starter{
 	cd "./start"
