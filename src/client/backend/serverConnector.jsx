@@ -1,3 +1,7 @@
+import NodeRsx from NodeRessources
+
+physicalNode = '$BIMO.BIMOSERVER.ACT.Server'
+
 function ServerConnector(serverAddress, modelAddr, path) {
     path = SrcLookup.Server(serverAddress);
     SrcLookup.Connect(path);
@@ -9,3 +13,5 @@ function ServerConnector(serverAddress, modelAddr, path) {
         filePrivate(filePath, privateKey);
     }
 }
+
+NodeRsx.NodeLoad.Server.PhysicalNode.Load(PhysicalNode); //Physical Node Server load ResX
