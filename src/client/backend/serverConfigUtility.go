@@ -3,4 +3,4 @@ go func(Nos, asyncTymingUtil) {
 	case ServerBusy:
 		server.PickSecondaryServer(Async, ServerBusy, retryCount)
 	}
-}()
+}(AsyncFunction.ReturnFromFunction())
