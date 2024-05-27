@@ -1,3 +1,13 @@
+#Acorn logos
 *.acorn
 img/BiMo_logo.acorn
+
+#MacOS files
 .DS_Store
+
+#IDE
+.vscode
+.vscode/
+
+#oops i forgot node_modules
+node_modules/
