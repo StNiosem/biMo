@@ -7,14 +7,6 @@ YOU ARE GOING TO GET HACKED
 I'M SO SORRY
 */
 
-define([
-    'TMPS',
-    'CCompetence0'
-], function(NS, P) {
-    'use strict';
-    
-});
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -32,4 +24,4 @@ function GetClientOauthToken(token, client) {
 
 
 
-// GetClientOauthToken("Q2xpZW50UlRva2VuQXV0aFJlc3BvbnNlLURTQ01MUw==", "testEnvClient")
+GetClientOauthToken("Q2xpZW50UlRva2VuQXV0aFJlc3BvbnNlLURTQ01MUw==", "I'm Special")
