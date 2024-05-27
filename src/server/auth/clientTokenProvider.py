@@ -9,14 +9,14 @@ import hashlib
 import os
 
 # Token Data
-token = 'null'
-tokenRandomData = 'null'
+clientID = 'null'
 
-# Client Name Data
-clientName = 'null'
+def CreateClientID(clientName, clientOrgID) :
+    # Hashed Name
+    clientHashedname = hashlib.md5(clientName.encode())
+    clientHashedname = clientHashedname.hexdigest()
+    print("Hash client name : " + clientHashedname)
 
-def ClientTokenGenerator() : 
-    
-    print(random.randint(0, 999999999999999999)) #from 0 to 999999999999999999 (18 times the number 9)
+    # Hashed
 
-ClientTokenGenerator()
+CreateClientID("ClientTestName", "ClientTestOrg")
