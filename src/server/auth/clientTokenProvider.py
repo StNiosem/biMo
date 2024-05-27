@@ -30,7 +30,7 @@ def CreateClientID(clientName, clientOrgID) :
     clientID = clientName + "-" + clientOrgID + "-" + clientCompleteStr
     print("Complete Client ID is : " + clientID)
 
-def CreateOauthToken() :
+def CreateOauthToken(oAuthTokenRequestID, oAuthtokenAccountID) :
     #OauthTokenCreator
     print("asdasdasd")
 
