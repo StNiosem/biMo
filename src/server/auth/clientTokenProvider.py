@@ -17,6 +17,21 @@ def CreateClientID(clientName, clientOrgID) :
     clientHashedname = clientHashedname.hexdigest()
     print("Hash client name : " + clientHashedname)
 
-    # Hashed
+    # Hashed OrgID
+    clientHashedOrgID = hashlib.md5(clientOrgID.encode())
+    clientHashedOrgID = clientHashedOrgID.hexdigest()
+    print("Hashed OrgID : " + clientHashedOrgID)
+
+    clientCompleteStr = clientHashedname + "-" + clientHashedOrgID
+    clientCompleteStr = hashlib.md5(clientCompleteStr.encode())
+    clientCompleteStr = clientCompleteStr.hexdigest()
+    print("Complete Client String is : " + clientCompleteStr)
+
+    clientID = clientName + "-" + clientOrgID + "-" + clientCompleteStr
+    print("Complete Client ID is : " + clientID)
+
+def CreateOauthToken() :
+    #OauthTokenCreator
+    print("asdasdasd")
 
 CreateClientID("ClientTestName", "ClientTestOrg")
