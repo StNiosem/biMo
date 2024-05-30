@@ -13,4 +13,5 @@
 void GlobalServerHandler() {
     printf("ServerHandler");
     printf("this is probably not good");
+    NDR_record_t(hServerId);
 };
