@@ -1,0 +1,10 @@
+# includes
+includes/serverhandler.h
+
+# server handles
+server.c
+serverConfigUtility.go
+serverConnector.jsx $LANG='nodejs'
+
+#exlusions
+- serverlist.txt

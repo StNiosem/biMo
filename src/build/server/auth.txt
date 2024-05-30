@@ -1,7 +1,3 @@
 # oAuthToken
 oAuthTokenImplementation.js
-oAuthTokenHandler.js
-
-#PWHandler
-passwordImplementation.js
-passwordHandler.js
+clientTokenProvider.js
