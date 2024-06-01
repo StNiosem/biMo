@@ -1,6 +1,6 @@
 arguments(
   - BuildManifestFormant : BM1.0
-  - BuildIntegrationSystem : node-build --action-pipeline
-  - PipelineManagement : node-oversee --action build='JS-to-C'
-
+  - PipelineManifestInterpreter : jsbuild -confugure $self.file
+  - BuildIntegrationSystem : jsbuild --action-pipeline
+  - PipelineManagement : jsbuild --oversee --action build='JS-to-C'
 )
